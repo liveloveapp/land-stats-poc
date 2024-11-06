@@ -1,0 +1,43 @@
+{
+  "name": "land-stats-poc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start": "npm-run-all --parallel start:client start:server",
+    "start:client": "vite",
+    "start:server": "node server/index.cjs"
+  },
+  "stackblitz": {
+    "startCommand": "npm start"
+  },
+  "dependencies": {
+    "ag-grid-enterprise": "^32.3.2",
+    "ag-grid-react": "^32.3.2",
+    "express": "^4.21.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "luxon": "^3.5.0",
+    "npm-run-all": "^4.1.5",
+    "pg": "^8.13.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
